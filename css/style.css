@@ -61,8 +61,9 @@ body{
     line-height: 1.4em;
 }
 .profile-text h2 span{
-    font-size: 0.8em;
-    font-weight: 300;
+    color: rgb(10, 245, 245) ;
+    font-size: 18px;
+    font-weight: 600
 }
 .contact-info{
     padding-top: 40px;
@@ -86,18 +87,19 @@ body{
     display: inline-block;
     width: 30px;
     font-size: 16px;
-    color: #f4c403;
+    color: aqua;
 }
-.contact-info ul li span{
+.contact-info ul li span a{
     color: #fff;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
+    text-decoration: none;
 }
 .contact-info.education li{
     margin-bottom: 15px;
 }
 .contact-info.education h5{
-    color: #f4c403;
+    color: aqua;
     font-weight: 500;
 }
 .contact-info.education h4:nth-child(2){
@@ -108,15 +110,21 @@ body{
     color: #fff;
     font-weight: 300;
 }
+.text-lang{
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+}
 .contact-info.language .percent{
     position: relative;
     width: 100%;
     border-radius: 3px;
-    height: 8px;
+    height: 12px;
     border: 1px solid #00000c;
     background: #00000c;
     display: block;
-    margin-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .contact-info.language .percent div{
     position: absolute;
@@ -124,8 +132,8 @@ body{
     left: 0;
     height: 100%;
     border-radius: 3px;
-    border: 1px solid #f4c403;
-    background: #f4c403;
+    border: 1px solid aqua;
+    background: aqua;
 }
 
 .container .right-side{
@@ -134,16 +142,29 @@ body{
     padding: 40px;
 }
 .about{
+    padding-top: 20px;
     margin-bottom: 50px;
 }
 .about:last-child{
     margin-bottom: 0;
 }
-.title{
-    color: #003147;
+.title2{
+    color: #000;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
+    border-left: .8rem solid gray;
+    padding-left: 15px;
+}
+.para-profile{
+    font-size: 18px;
+    font-weight: 400;
+    text-indent: 100px;
+    line-height: 1.8rem;
+    text-align: justify;
+    color: gray;
+    
 }
 p{
     color: #333;
@@ -151,19 +172,60 @@ p{
 .about .box{
     display: flex;
     flex-direction: row;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 .about .box .year-company{
     min-width: 150px;
 }
-.about .box .year-company h5{
-    color: #848c90;
+/* .about .box .year-company h5{
+    color: blue;
     font-weight: 600;
-}
+} */
 .about .box .text h4{
     text-transform: uppercase;
-    color: #2a7da2;
+    color: #000;
     font-size: 16px;
+}
+/* experience */
+.year-company{
+    margin-right: 10px;
+}
+.box .year-company .skills-applied{
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+.box .year-company a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: blue;
+    border-left: .8rem solid #003147;
+    padding-left: 10px;
+}
+.skills-tools{
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.about .box .year-company .list-skills{
+    margin-top: 10px;
+    color: blue;
+}
+.text .project-title{
+    border-left: .8rem solid gray;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+}
+.para-project{
+    text-indent: 50px;
+    text-align: justify;
+    margin-top: 10px;
+    color: #616365;
 }
 .skills .box{
     position: relative;
@@ -175,23 +237,26 @@ p{
 }
 .skills .box h4{
     text-transform: uppercase;
-    color: #848c99;
-    font-weight: 500;
+    color: #616365;
+    font-weight: 600;
 }
 .skills .box .percent{
     position: relative;
     width: 100%;
-    height: 10px;
+    height: 12px;
     border-radius: 3px;
     background: #edeff1;
+    border: 1px solid #edeff1;
 }
 .skills .box .percent div{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 3px;
-    background-color: #f4c403;
+    border-radius: 2px;
+    background-color: aqua;
+    border: 1px solid aqua;
+    outline-color: aqua;
 }
 .interest ul{
     display: grid;
@@ -201,13 +266,15 @@ p{
 .interest ul li{
     list-style: none;
     color: #333;
+    font-size: 16px;
     font-weight: 500;
     margin: 10px 0;
 }
 .interest ul li .fa{
-    color: #f4c403;
-    font-size: 18px;
+    color: #003147;
+    font-size: 20px;
     width: 20px;
+    padding-right: 35px;
 }
 @media(max-width: 1000px) {
     .container{
