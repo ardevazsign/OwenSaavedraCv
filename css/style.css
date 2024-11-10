@@ -1,302 +1,315 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-.container{
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 100px;
-    background-color: #fff;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0,0.1);
+h4 {
+  font-size: 14px;
 }
-.container .left-side{
-    position: relative;
-    background: #003147;
-    padding: 40px;
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1050px;
+  min-height: 100px;
+  background-color: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-.profile-text{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+.container .left-side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
 }
-.profile-text .img-profile{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
+.profile-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.profile-text .img-profile img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.profile-text .img-profile {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
 }
-.profile-text h2{
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1.4em;
+.profile-text .img-profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.profile-text h2 span{
-    color: rgb(10, 245, 245) ;
-    font-size: 18px;
-    font-weight: 600
+.profile-text h2 {
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.4em;
 }
-.contact-info{
-    padding-top: 40px;
+.profile-text h2 span {
+  color: rgb(10, 245, 245);
+  font-size: 14px;
+  font-weight: 600;
 }
-.title{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+.contact-info {
+  padding-top: 15px;
 }
-.contact-info ul{
-    position: relative;
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
-.contact-info ul li{
-    list-style: none;
-    position: relative;
-    margin: 10px 0;
+.contact-info ul {
+  position: relative;
 }
-.contact-info ul li .icon{
-    display: inline-block;
-    width: 30px;
-    font-size: 16px;
-    color: aqua;
+.contact-info ul li {
+  list-style: none;
+  position: relative;
+  margin: 5px 0;
 }
-.contact-info ul li span a{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
+.contact-info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 14px;
+  color: aqua;
 }
-.contact-info.education li{
-    margin-bottom: 15px;
+.contact-info ul li span a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
 }
-.contact-info.education h5{
-    color: aqua;
-    font-weight: 500;
+.contact-info.education li {
+  margin-bottom: 10px;
 }
-.contact-info.education h4:nth-child(2){
-    color: #fff;
-    font-weight: 500;
+.contact-info.education h5 {
+  color: aqua;
+  font-weight: 500;
 }
-.contact-info.education h4{
-    color: #fff;
-    font-weight: 300;
+.contact-info.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
 }
-.text-lang{
-    font-size: 18px;
-    font-weight: 500;
-    color: whitesmoke;
+.contact-info.education h4 {
+  color: #fff;
+  font-weight: 300;
 }
-.contact-info.language .percent{
-    position: relative;
-    width: 100%;
-    border-radius: 3px;
-    height: 12px;
-    border: 1px solid #00000c;
-    background: #00000c;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.text-lang {
+  font-size: 14px;
+  font-weight: 500;
+  color: whitesmoke;
 }
-.contact-info.language .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-radius: 3px;
-    border: 1px solid aqua;
-    background: aqua;
+.contact-info.language .percent {
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  height: 12px;
+  border: 1px solid #00000c;
+  background: #00000c;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-info.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 3px;
+  border: 1px solid aqua;
+  background: aqua;
 }
 
-.container .right-side{
-    position: relative;
-    background: #fff;
-    padding: 40px;
+.container .right-side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
 }
-.about{
-    padding-top: 20px;
-    margin-bottom: 50px;
+.about {
+  padding-top: 10px;
+  margin-bottom: 30px;
 }
-.about:last-child{
-    margin-bottom: 0;
+.about:last-child {
+  margin-bottom: 0;
 }
-.title2{
-    color: #000;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px; 
-    border-left: .8rem solid gray;
-    padding-left: 15px;
+.title22 {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
-.para-profile{
-    font-size: 18px;
-    font-weight: 400;
-    text-indent: 100px;
-    line-height: 1.8rem;
-    text-align: justify;
-    color: gray;
-    
+.title2 {
+  color: #003147;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  border-left: 0.8rem solid #007fff;
+  padding-left: 15px;
 }
-p{
-    color: #333;
+.para-profile {
+  font-size: 14px;
+  font-weight: 500;
+  text-indent: 100px;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: gray;
 }
-.about .box{
-    display: flex;
-    flex-direction: row;
-    margin: 15px 0;
+p {
+  color: #333;
 }
-.about .box .year-company{
-    min-width: 150px;
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+.about .box .year-company {
+  min-width: 150px;
 }
 /* .about .box .year-company h5{
     color: blue;
     font-weight: 600;
 } */
-.about .box .text h4{
-    text-transform: uppercase;
-    color: #000;
-    font-size: 16px;
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
 }
 /* experience */
-.year-company{
-    margin-right: 10px;
+.year-company {
+  margin-right: 10px;
 }
-.box .year-company .skills-applied{
-    font-size: 12px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 5px;
+.box .year-company .skills-applied {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
 }
-.box .year-company a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: blue;
-    border-left: .8rem solid #003147;
-    padding-left: 10px;
+.box .year-company a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #007fff;
+  border-left: 0.8rem solid #003147;
+  padding-left: 10px;
 }
-.skills-tools{
-    color: #000;
-    font-size: 12px;
-    font-weight: 700;
-    margin-top: 5px;
+.skills-tools {
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 5px;
 }
-.about .box .year-company .list-skills{
-    margin-top: 10px;
-    color: blue;
+.about .box .year-company .list-skills {
+  margin-top: 10px;
+  color: #007fff;
+  font-size: 12px;
 }
-.text .project-title{
-    border-left: .8rem solid gray;
-    padding-left: 10px;
-    font-size: 20px;
-    font-weight: 800;
-    color: #000;
+.text .project-title {
+  border-left: 0.8rem solid #007fff;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
 }
-.para-project{
-    text-indent: 50px;
-    text-align: justify;
-    margin-top: 10px;
-    color: #616365;
+.para-project {
+  font-size: 14px;
+  text-indent: 50px;
+  text-align: justify;
+  margin-top: 10px;
+  color: #616365;
 }
-.skills .box{
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
 }
-.skills .box h4{
-    text-transform: uppercase;
-    color: #616365;
-    font-weight: 600;
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #616365;
+  font-weight: 600;
 }
-.skills .box .percent{
-    position: relative;
-    width: 100%;
-    height: 12px;
-    border-radius: 3px;
-    background: #edeff1;
-    border: 1px solid #edeff1;
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 12px;
+  border-radius: 3px;
+  background: #edeff1;
+  border: 1px solid #edeff1;
 }
-.skills .box .percent div{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-radius: 2px;
-    background-color: aqua;
-    border: 1px solid aqua;
-    outline-color: aqua;
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #007fff;
+  border: 1px solid grey;
+  outline-color: grey;
 }
-.interest ul{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.interest ul li{
-    list-style: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 10px 0;
+.interest ul li {
+  list-style: none;
+  color: #ffff;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0;
 }
-.interest ul li .fa{
-    color: #003147;
-    font-size: 20px;
-    width: 20px;
-    padding-right: 35px;
+.interest ul li .fa {
+  color: aqua;
+  font-size: 18px;
+  width: 20px;
+  padding-right: 35px;
 }
-@media(max-width: 1000px) {
-    .container{
-        margin: 10px;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .interest ul{
-        grid-template-columns: repeat(2,1fr);
-
-    }
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 600px) {
-    .about .box{
-        flex-direction: column;
-    }
-    .about .box .year-company{
-        margin-bottom: 5px;
-    }
-    .interest ul{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .skills .box{
-        grid-template-columns: repeat(1,1fr);
-    }
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year-company {
+    margin-bottom: 5px;
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
