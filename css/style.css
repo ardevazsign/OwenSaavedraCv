@@ -10,13 +10,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding-bottom: 100px;
 }
 h4 {
   font-size: 14px;
 }
 .container {
+  max-height: 100%;
   position: relative;
   width: 100%;
   max-width: 1300px;
