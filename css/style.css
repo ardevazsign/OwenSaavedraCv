@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   min-height: 100vh;
 }
 h4 {
@@ -20,9 +20,9 @@ h4 {
   height: 100%;
   width: 75%;
   position: relative;
-  max-height: calc(100vh - 40px);
+  max-height: calc(100vh - 20px);
   background-color: #fff;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
