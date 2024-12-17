@@ -15,9 +15,9 @@ h4 {
   font-size: 14px;
 }
 .container {
-  max-height: 100%;
-  position: relative;
+  height: 100%;
   width: 100%;
+  position: relative;
   max-width: 1300px;
   background-color: #fff;
   margin: 20px 0;
