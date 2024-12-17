@@ -10,25 +10,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  min-height: 100vh;
+  min-width: auto;
+  max-height: 100vh;
+  padding: 20% 0;
 }
 h4 {
   font-size: 14px;
 }
 .container {
-  height: 100%;
-  width: 75%;
+  width: 85%;
   position: relative;
   max-height: calc(100vh - 20px);
   background-color: #fff;
-  margin-bottom: 10%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 .container .left-side {
-  height: 100%;
+  height: auto;
   position: relative;
   background: #003147;
   padding: 40px;
@@ -143,7 +142,7 @@ h4 {
 }
 
 .container .right-side {
-  height: 100%;
+  height: auto;
   position: relative;
   background: #fff;
   padding: 40px;
