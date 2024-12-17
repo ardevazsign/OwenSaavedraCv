@@ -10,15 +10,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 20px;
+  min-height: 100vh;
 }
 h4 {
   font-size: 14px;
 }
 .container {
-  height: 80%;
-  width: 60%;
+  height: 100%;
+  width: 75%;
   position: relative;
   max-height: calc(100vh - 40px);
   background-color: #fff;
